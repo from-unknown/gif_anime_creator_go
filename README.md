@@ -15,8 +15,8 @@ Supported format:
 gif_anime_creator_go [-start=position] [-end=position] image_file_name
 
   -start           position to start from. right, left, top, bottom are allowed. default: left  
-  -end             position to end to. right, left, top, bottom are allowed. default: left
-  image_file_name  image file to convert.
+  -end             position to end to. right, left, top, bottom are allowed. default: left  
+  image_file_name  image file to convert.  
 
 
 ## Hope you enjoy!
