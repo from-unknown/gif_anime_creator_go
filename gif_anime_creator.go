@@ -170,13 +170,3 @@ func main() {
 		LoopCount: 0,
 	})
 }
-
-// Check if color is already in the Palette
-func contains(colorPalette color.Palette, c color.Color) bool {
-	for _, tmpColor := range colorPalette {
-		if tmpColor == c {
-			return true
-		}
-	}
-	return false
-}
