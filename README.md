@@ -12,10 +12,11 @@ Supported format:
 
 ## usage
 
-gif_anime_creator_go [-start=position] [-end=position] image_file_name
+gif_anime_creator_go [-start=position] [-end=position] [-loop=boolean] image_file_name
 
   -start           position to start from. right, left, top, bottom are allowed. default: left  
   -end             position to end to. right, left, top, bottom are allowed. default: left  
+  -center          true: start from center. false: start from outside. defalut: false
   image_file_name  image file to convert.  
 
 

@@ -28,12 +28,16 @@ func main() {
 	// ending position
 	flag.StringVar(&argEndFlag, "end", "right", "Please set direction for gif animation.")
 	// loop flag
-	flag.StringVar(&argLoopFlag, "loop", "false", "Please set direction for gif animation.")
+	flag.StringVar(&argLoopFlag, "center", "false", "Please set direction for gif animation.")
 	flag.Parse()
 
 	const postFix string = "_animated"
 
 	// image file path
+	if len(flag.Args()) < 1 {
+		log.Println("usage - gif_anime_creator [-start=position] [-end=position] [-center=boolean] image_file_path")
+		return
+	}
 	filePath := flag.Args()[0]
 	base := filepath.Base(filePath)
 	ext := filepath.Ext(filePath)
